@@ -1,0 +1,18 @@
+.app-container {
+    position: relative;
+    display: flex;
+    height: 100%;
+}
+
+.background-svg {
+    position: absolute;
+    fill: url(#myGradient);
+    height: 100%;
+    width: 100%;
+}
+
+.toggle-svg {
+    position: absolute;
+    width: 100px;
+}
+
