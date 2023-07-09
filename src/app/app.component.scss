@@ -1,6 +1,8 @@
 .app-container {
     position: relative;
     display: flex;
+    justify-content: center;
+    align-items: center;
     height: 100%;
 }
 
@@ -11,16 +13,137 @@
     width: 100%;
 }
 
-.toggle-svg {
+.nav {
     position: absolute;
-    width: 100px;
-    cursor: pointer;
+    display: flex;
+    gap: 15px;
+    top: 25px;
 
     .bean {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 15px;
+        width: 100px;
+        height: 35px;
+        font-family: "San Francisco", "Arial", sans-serif;
+        cursor: pointer;
+
+        background-color: #FCFBF7;
+        transition: background-color 1s ease;
+
+        &:hover {
+            background-color: #B1B0AD;
+            transition: background-color 0.4s ease;
+        }
 
     }
 
-    .circle {
+    .home {
 
     }
+
+    .resume {
+
+    }
+
+    .contact {
+
+    }
+    
+    .toggle {
+        height: 35px;
+        width: 55px;
+        cursor: pointer;
+
+        &:hover {
+            .circle1 {
+                fill: #FFBDB1;
+                transition: fill 0.5s ease;
+            }
+        
+            .circle2 {
+                fill: #FFD0CA;
+                transition: fill 1.5s ease;
+            }
+        
+            .circle3 {
+                fill: #FFE6E3;
+                transition: fill 2s ease;
+            }
+    
+        }
+    
+        .circle-svg {
+            position: absolute;
+            height: 35px;
+            width: 35px;
+        }
+    
+        .circle1 {
+            fill: #B1B0AD;
+            transform: translateX(0px);
+
+            transition: fill 1s ease;
+        }
+    
+        .circle2 {
+            fill: #D6D5D2;
+            transform: translateX(10px);
+
+            transition: fill 1.5s ease;
+        }
+    
+        .circle3 {
+            fill: #FCFBF7;
+            transform: translateX(20px);
+
+            transition: fill 2s ease;
+        }
+    }
+}
+
+.intro {
+    position: absolute;
+    width: 100px;
+
+    .circle-svg {
+        position: absolute;
+    }
+
+    .circle1 {
+        fill: #B1B0AD;
+        transform: translateX(-100px);
+        animation: circle1-ani 2s ease forwards;
+    }
+
+    .circle2 {
+        fill: #D6D5D2;
+        transform: translateX(-130px);
+        animation: circle2-ani 2s ease forwards;
+    }
+
+    .circle3 {
+        fill: #FCFBF7;
+        transform: translateX(-160px);
+        animation: circle3-ani 2s ease forwards;
+    }
+}
+
+@keyframes circle1-ani {
+    0% { transform: translateX(-100px); }
+    50% { transform: translateX(30px); }
+    100% { transform: translateX(-30px); }
+}
+
+@keyframes circle2-ani {
+    0% { transform: translateX(-130px); }
+    50% { transform: translateX(20px); }
+    100% { transform: translateX(0px); }
+}
+
+@keyframes circle3-ani {
+    0% { transform: translateX(-160px); }
+    50% { transform: translateX(10px); }
+    100% { transform: translateX(30px); }
 }
