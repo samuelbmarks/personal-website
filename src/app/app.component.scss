@@ -1,4 +1,4 @@
-.app-container {
+.container {
     position: relative;
     display: flex;
     justify-content: center;
@@ -6,144 +6,130 @@
     height: 100%;
 }
 
-.background-svg {
+.details {
     position: absolute;
-    fill: url(#myGradient);
-    height: 100%;
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    left: 20px;
+    top: 20px;
+    font-family: "San Francisco", "Arial", sans-serif;
+    // font-weight: 200;
+    font-size: 20px;
 }
 
 .nav {
     position: absolute;
-    display: flex;
-    gap: 15px;
+    left: 10%;
+    right: 10%;
     top: 25px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 5%;
+    height: 35px;
 
     .bean {
         display: flex;
         justify-content: center;
         align-items: center;
         border-radius: 15px;
-        width: 100px;
-        height: 35px;
+        height: 100%;
+        width: 100%;
         font-family: "San Francisco", "Arial", sans-serif;
+        font-size: 16px;
         cursor: pointer;
 
-        background-color: #FCFBF7;
+        background-color: var(--bean);
         transition: background-color 1s ease;
 
         &:hover {
-            background-color: #B1B0AD;
+            background-color: var(--bean-hover);
             transition: background-color 0.4s ease;
         }
-
-    }
-
-    .home {
-
-    }
-
-    .resume {
-
-    }
-
-    .contact {
-
-    }
-    
-    .toggle {
-        height: 35px;
-        width: 55px;
-        cursor: pointer;
-
-        &:hover {
-            .circle1 {
-                fill: #FFBDB1;
-                transition: fill 0.5s ease;
-            }
-        
-            .circle2 {
-                fill: #FFD0CA;
-                transition: fill 1.5s ease;
-            }
-        
-            .circle3 {
-                fill: #FFE6E3;
-                transition: fill 2s ease;
-            }
-    
-        }
-    
-        .circle-svg {
-            position: absolute;
-            height: 35px;
-            width: 35px;
-        }
-    
-        .circle1 {
-            fill: #B1B0AD;
-            transform: translateX(0px);
-
-            transition: fill 1s ease;
-        }
-    
-        .circle2 {
-            fill: #D6D5D2;
-            transform: translateX(10px);
-
-            transition: fill 1.5s ease;
-        }
-    
-        .circle3 {
-            fill: #FCFBF7;
-            transform: translateX(20px);
-
-            transition: fill 2s ease;
-        }
-    }
+    }  
 }
 
-.intro {
+.app-container {
+    display: flex;
+    flex-direction: column;
     position: absolute;
-    width: 100px;
+    left: 10%;
+    right: 10%;
+    gap: 20px;
+    max-width: 400px;
 
-    .circle-svg {
-        position: absolute;
+    .large-apps {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 15px;
+        column-gap: 5%;
     }
 
-    .circle1 {
-        fill: #B1B0AD;
-        transform: translateX(-100px);
-        animation: circle1-ani 2s ease forwards;
+    .apps {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        row-gap: 15px;
+        column-gap: 5%;
     }
 
-    .circle2 {
-        fill: #D6D5D2;
-        transform: translateX(-130px);
-        animation: circle2-ani 2s ease forwards;
-    }
+    .app, .larger-app {
+        // app and app name properties
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3px;
 
-    .circle3 {
-        fill: #FCFBF7;
-        transform: translateX(-160px);
-        animation: circle3-ani 2s ease forwards;
+        .app-title {
+            font-family: "San Francisco", "Arial", sans-serif;
+            font-size: 12px;
+            color: #333333;
+            filter: drop-shadow(0px 0px 5x rgba(0, 0, 0, 1));
+        }
     }
 }
 
-@keyframes circle1-ani {
-    0% { transform: translateX(-100px); }
-    50% { transform: translateX(30px); }
-    100% { transform: translateX(-30px); }
+.app-svg {
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+
+    .app-bkgd-drop-shadow {
+        filter: drop-shadow(0px 0px 1px var(--theme1));
+    }
+    .app-img-bkgd {
+        fill: #000000;
+        fill-opacity: 0.25;
+    }
+
+    .app-bkgd {
+        fill: var(--theme1);
+        filter: drop-shadow(0px 0px 1px var(--theme1));
+    }
+
+    .app-logo {
+        fill: var(--theme2);
+    }
+
+    .app-name {
+        fill: #222222;
+    }
 }
 
-@keyframes circle2-ani {
-    0% { transform: translateX(-130px); }
-    50% { transform: translateX(20px); }
-    100% { transform: translateX(0px); }
+
+.tab1 {
+    fill: var(--theme2-dark6);
+} .tab2 {
+    fill: var(--theme2-dark4);
+} .tab3 {
+    fill: var(--theme2-dark2);
+} .tab4 {
+    fill: var(--theme2);
 }
 
-@keyframes circle3-ani {
-    0% { transform: translateX(-160px); }
-    50% { transform: translateX(10px); }
-    100% { transform: translateX(30px); }
+.pp1 {
+    fill: var(--theme2-dark4);
+} .pp2 {
+    fill: var(--theme2-dark2);
+} .pp3 {
+    fill: var(--theme2);
 }

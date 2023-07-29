@@ -3,10 +3,14 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { IntroComponent } from './intro/intro.component';
+import { BackgroundSvgComponent } from './background-svg/background-svg.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    IntroComponent,
+    BackgroundSvgComponent
   ],
   imports: [
     BrowserModule,
