@@ -93,8 +93,21 @@
     height: 100%;
     overflow: visible;
 
+    &:hover {
+        .app-bkgd-drop-shadow {
+            filter: drop-shadow(0px 0px 1px var(--theme1-mono));
+            transition: filter 0.5s ease;
+        }
+
+        .app-bkgd {
+            fill: var(--theme1-mono);;
+            transition: fill 0.5s;
+        }
+    }
+
     .app-bkgd-drop-shadow {
         filter: drop-shadow(0px 0px 1px var(--theme1));
+        transition: filter 1s ease;
     }
     .app-img-bkgd {
         fill: #000000;
@@ -104,6 +117,8 @@
     .app-bkgd {
         fill: var(--theme1);
         filter: drop-shadow(0px 0px 1px var(--theme1));
+
+        transition: fill 1s ease;
     }
 
     .app-logo {
@@ -111,7 +126,7 @@
     }
 
     .app-name {
-        fill: #222222;
+        fill: var(--theme2-darker1);
     }
 }
 

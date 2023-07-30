@@ -54,34 +54,17 @@ export class AppComponent implements OnInit {
     document.documentElement.style.setProperty('--theme2-dark4', "#D0C8CB");
     document.documentElement.style.setProperty('--theme2-dark5', "#C6B9BE");
     document.documentElement.style.setProperty('--theme2-dark6', "#BCA9B1");
-    
+
+    document.documentElement.style.setProperty('--theme2-darker1', "#020102");
+    document.documentElement.style.setProperty('--theme2-darker2', "#171214");
+    document.documentElement.style.setProperty('--theme2-darker3', "#2C2327");
+    document.documentElement.style.setProperty('--theme2-darker4', "#42343A");
+    document.documentElement.style.setProperty('--theme2-darker5', "#57454D");
+    document.documentElement.style.setProperty('--theme2-darker6', "#6C565F");
+
     // wait times for color transitions
     
-
-    this.displayCalendarDate();
-    this.displayDate();
     await this.displayIP();
-  }
-
-  displayCalendarDate() {
-    var date = new Date();
-
-    var dow = date.getDay();
-    var day = date.getDate();
-
-    var dowString = this.DOW_SHORT[dow];
-  
-    var dateDow = document.getElementById("date-dow");
-    var dateDay = document.getElementById("date-day");
-
-    dateDow!.textContent = dowString;
-    dateDay!.textContent = day.toString();
-  }
-
-  displayDate() {
-    var date = new Date();
-    var dateElement = document.getElementById("date");
-    dateElement!.textContent = date.toDateString();
   }
 
   async displayIP() {
