@@ -1,4 +1,6 @@
-# MinimalWebsite
+# PersonalWebsite
+
+A website, and this time its personal.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.2.
 
