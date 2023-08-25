@@ -3,17 +3,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 100px;
     height: 100%;
 }
 
-.details {
-    position: absolute;
+.app-grid {
+    width: 90%;
     display: flex;
-    flex-direction: column;
-    left: 20px;
-    top: 20px;
-    font-family: "San Francisco", "Arial", sans-serif;
-    // font-weight: 200;
-    font-size: 20px;
+    align-items: center;
+    justify-content: center;
 }
