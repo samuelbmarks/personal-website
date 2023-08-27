@@ -42,8 +42,8 @@
         transition: filter 1s ease;
     }
     .app-img-bkgd {
-        fill: #000000;
-        fill-opacity: 0.15;
+        fill: #554149;
+        fill-opacity: 0.25;
     }
 
     .app-bkgd {
@@ -60,17 +60,6 @@
     .app-name {
         fill: var(--theme2-darker1);
     }
-}
-
-
-.tab1 {
-    fill: var(--theme2-dark6);
-} .tab2 {
-    fill: var(--theme2-dark4);
-} .tab3 {
-    fill: var(--theme2-dark2);
-} .tab4 {
-    fill: var(--theme2);
 }
 
 .pp1 {
