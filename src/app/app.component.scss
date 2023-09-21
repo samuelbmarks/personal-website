@@ -3,12 +3,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
+    height: auto;
+    min-height: 100%;
 }
 
 .app-grid {
+    position: absolute;
     width: 90%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    max-width: 350px;
+    bottom: 100px;
+    right: 100px;
 }

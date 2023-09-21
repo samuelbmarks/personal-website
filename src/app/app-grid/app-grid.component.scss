@@ -3,14 +3,8 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
-    max-width: 400px;
-
-    .large-apps {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        row-gap: 15px;
-        column-gap: 5%;
-    }
+    width: 100%;
+    max-width: 350px;
 
     .apps {
         display: grid;
@@ -27,7 +21,7 @@
 
     &:hover {
         .app-bkgd-drop-shadow {
-            filter: drop-shadow(0px 0px 1px var(--theme1-mono));
+            filter: drop-shadow(0px 0px 1.2px rgba(0, 0, 0, 0.3));
             transition: filter 0.5s ease;
         }
 
@@ -37,18 +31,9 @@
         }
     }
 
-    .app-bkgd-drop-shadow {
-        filter: drop-shadow(0px 0px 1px var(--theme1));
-        transition: filter 1s ease;
-    }
-    .app-img-bkgd {
-        fill: #554149;
-        fill-opacity: 0.25;
-    }
-
     .app-bkgd {
         fill: var(--theme1);
-        filter: drop-shadow(0px 0px 1px var(--theme1));
+        filter: drop-shadow(0px 0px 1.2px rgba(0, 0, 0, 0.3));
 
         transition: fill 1s ease;
     }
@@ -62,6 +47,31 @@
     }
 }
 
+.fade-ani-1 {
+    transform: scale(0);
+    animation: fade-in 0.6s ease 0.3s forwards;
+}
+
+.fade-ani-2 {
+    transform: scale(0);
+    animation: fade-in 0.6s ease 0.4s forwards;
+}
+
+.fade-ani-3 {
+    transform: scale(0);
+    animation: fade-in 0.6s ease 0.5s forwards;
+}
+
+.fade-ani-4 {
+    transform: scale(0);
+    animation: fade-in 0.6s ease 0.6s forwards;
+}
+
+.fade-ani-5 {
+    transform: scale(0);
+    animation: fade-in 0.6s ease 0.7s forwards;
+}
+
 .pp1 {
     fill: var(--theme2-dark4);
 } .pp2 {
@@ -69,3 +79,12 @@
 } .pp3 {
     fill: var(--theme2);
 }
+
+@keyframes fade-in {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}     
