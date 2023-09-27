@@ -1,22 +1,11 @@
-.app-container {
-    position: relative;
+.apps {
     display: flex;
-    flex-direction: column;
-    gap: 20px;
-    width: 100%;
-    max-width: 350px;
+    gap: 10px;
 
-    .apps {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        row-gap: 15px;
-        column-gap: 5%;
-    }
 }
 
 .app-svg {
-    width: 100%;
-    height: 100%;
+    width: 28px;
     overflow: visible;
 
     &:hover {
@@ -26,13 +15,13 @@
         }
 
         .app-bkgd {
-            fill: var(--theme1-mono);;
+            fill: red;
             transition: fill 0.5s;
         }
     }
 
     .app-bkgd {
-        fill: var(--theme1);
+        fill: blac;
         filter: drop-shadow(0px 0px 1.2px rgba(0, 0, 0, 0.3));
 
         transition: fill 1s ease;
@@ -46,45 +35,3 @@
         fill: var(--theme2-darker1);
     }
 }
-
-.fade-ani-1 {
-    transform: scale(0);
-    animation: fade-in 0.6s ease 0.3s forwards;
-}
-
-.fade-ani-2 {
-    transform: scale(0);
-    animation: fade-in 0.6s ease 0.4s forwards;
-}
-
-.fade-ani-3 {
-    transform: scale(0);
-    animation: fade-in 0.6s ease 0.5s forwards;
-}
-
-.fade-ani-4 {
-    transform: scale(0);
-    animation: fade-in 0.6s ease 0.6s forwards;
-}
-
-.fade-ani-5 {
-    transform: scale(0);
-    animation: fade-in 0.6s ease 0.7s forwards;
-}
-
-.pp1 {
-    fill: var(--theme2-dark4);
-} .pp2 {
-    fill: var(--theme2-dark2);
-} .pp3 {
-    fill: var(--theme2);
-}
-
-@keyframes fade-in {
-    0% {
-        transform: scale(0);
-    }
-    100% {
-        transform: scale(1);
-    }
-}     

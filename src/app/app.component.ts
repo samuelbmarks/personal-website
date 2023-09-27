@@ -35,7 +35,9 @@ export class AppComponent implements OnInit {
 
     document.documentElement.style.setProperty('--theme2-black', "#020102");
 
-    // wait times for color transitions
+    // animations
+    document.documentElement.style.setProperty('--a-scale-duration', "0.6s");
+    document.documentElement.style.setProperty('--a-scale-timing-function', "ease");
     
     await this.displayIP();
   }
