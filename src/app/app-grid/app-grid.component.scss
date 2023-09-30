@@ -20,13 +20,13 @@
     }
 
     .app-bkgd {
-        fill: black;
+        fill: var(--svg-bkgd-color);
         filter: drop-shadow(0px 0px 1.2px rgba(0, 0, 0, 0.3));
 
         transition: fill 1s ease;
     }
 
     .app-logo {
-        fill: var(--app-logo-color);
+        fill: var(--svg-logo-color);
     }
 }
