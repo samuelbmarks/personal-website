@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 // Function to fetch the user's IP address using ipify API
-async function getUserIPAddress() {
+async function getClientIPAddress() {
   try {
     const response = await axios.get('https://api.ipify.org?format=json');
     return response.data.ip;
@@ -11,4 +11,4 @@ async function getUserIPAddress() {
   }
 }
 
-export default getUserIPAddress;
+export default getClientIPAddress;

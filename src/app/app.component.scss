@@ -8,36 +8,17 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 20px;
-    
-    // background-image: linear-gradient(
-    //     90deg, #aa8996, 
-    //     #a98896, #a78797, #a68697, #a48598, #a28499, #a08499, #9e839a, #9c829a, #9a819b, #97819b, #95809c,
-    //     #937f9c, #907f9d, #8d7e9d, #8a7e9e, #887d9e, #857d9e, #817c9f, #7e7c9f, #7b7c9f, #787b9f, #747b9f,
-    //     #707b9f, #6c7a9f, #687a9e, #647a9e, #607a9d, #5c799d, #58799c, #53799b, #4f799a, #4b7899, #467898,
-    //     #417897, #3d7795, #387794, #327692, #2d7691, #28768f, #22758d, #1c758b, #157489, #0c7486, #027384,
-    //     #007281, #00727f, #00717c, #007079, #007076, #006f73, #006e70, #006d6d, #006d6a, #006c67, #006b64
-    // );    
-    
-    // background-image: linear-gradient(
-    //     90deg, rgba(39, 54, 46, 0.8), rgba(155, 176, 165, 0.8)
-    // );
-
-    background-image: linear-gradient(
-        90deg, 
-        rgba(65, 99, 106, 1), rgba(94, 126, 121, 1), 
-        rgba(130, 152, 137, 1), rgba(172, 178, 156, 1)
-    );
+    gap: 10px;
 
     background-size: 600% 600%;
     animation: gradientAnimation 8s ease infinite;
 
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "San Francisco", Arial, Helvetica, sans-serif;
     color: var(--text-color);
 }
 
 .main {
-    background-color: var(--main-color);
+    background-color: rgba(65, 99, 106, 0.8);
 
     position: relative;
     padding: 60px 40px;
@@ -73,6 +54,7 @@
 
         .subtitle {
             font-size: 16pt;
+            // font-weight: 500;
         }
     }
 
@@ -89,6 +71,7 @@
             border-radius: 6px;
             box-shadow: var(--shadow-tag);
             font-size: 14px;
+            font-weight: bold;
         }
     }
 }
@@ -116,6 +99,11 @@
 
             .a-text {
                 color: var(--text-color);
+                font-weight: bold;
+            }
+
+            .resume2 {
+                display: none;
             }
 
             .a-svg {
@@ -136,7 +124,7 @@
             -moz-transition: background-color 0.3s;
 
             &:hover {
-                background-color: #DED876;
+                background-color: rgba(0, 0, 0, 0);
                 transition: background-color 0.5;
                 -webkit-transition: background-color 0.5s;
                 -o-transition: background-color 0.5s;
@@ -159,13 +147,20 @@ a {
     fill: #D0C8CB;
 }
 
+.color-group1 { background-color: var(--color-group1); opacity: 1; }
+.color-group2 { background-color: var(--color-group2); opacity: 1; }
+.color-group3 { background-color: var(--color-group3); opacity: 1; }
+.color-group4 { background-color: var(--color-group4); opacity: 1; }
+.color-group5 { background-color: var(--color-group5); opacity: 1; }
+.color-group6 { background-color: var(--color-group6); opacity: 1; }
+
 @keyframes gradientAnimation {
     0% { background-position: 0% 50% }
     50% { background-position: 100% 50% }
     100% { background-position:0% 50% }
 }    
 
-@media (max-width: 770px) {
+@media (max-width: 830px) {
     .main {
         width: 80%;
         flex-direction: column;
@@ -188,24 +183,14 @@ a {
         align-items: center;
         
         .actions {
-            flex-wrap: nowrap;
-            flex-direction: column;
-            width: 100%;
-            max-width: none;
-
             .action {
-                justify-content: center;
+                .a-svg {
+                    // width: 32px;
+                }
             }
         }
     }
 }
-
-.color-group1 { background-color: var(--color-group1); opacity: 1; }
-.color-group2 { background-color: var(--color-group2); opacity: 1; }
-.color-group3 { background-color: var(--color-group3); opacity: 1; }
-.color-group4 { background-color: var(--color-group4); opacity: 1; }
-.color-group5 { background-color: var(--color-group5); opacity: 1; }
-.color-group6 { background-color: var(--color-group6); opacity: 1; }
 
 @media (max-width: 730px) {
     .left {
@@ -223,14 +208,14 @@ a {
     }
 }
 
-@media (max-height: 450px) {
+@media (max-height: 585px) {
     .container {
         justify-content: flex-start;
     }
 
     .main {
-        margin-top: 30px;
-        margin-bottom: 30px;
+        margin-top: 40px;
+        margin-bottom: 40px;
     }
 }
 
@@ -243,5 +228,35 @@ a {
         padding: 40px 0;
         margin-top: 40px;
         margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 565px) {
+    .right {        
+        .actions {
+            flex-wrap: nowrap;
+            flex-direction: column;
+
+            width: 100%;
+            max-width: none;
+
+            .action {
+                height: 32px;
+                justify-content: center;
+
+                .a-svg {
+                    position: absolute;
+                    right: 10px;
+                }
+
+                .resume1 {
+                    display: none;
+                }
+
+                .resume2 {
+                    display: flex;
+                }
+            }
+        }
     }
 }

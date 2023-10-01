@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import getUserIPAddress from './ts/ipAddress';
+import getClientIPAddress from './ts/ipAddress';
 
 @Component({
   selector: 'app-root',
@@ -10,11 +11,14 @@ export class AppComponent implements OnInit {
 
   private DOW_SHORT = ['SUN', 'MON', 'TUE', 'WED', 'THUR', 'FRI', 'SAT'];
   private DOW = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+  
+  public clientIpAddress = "Welcome";
+  public serverIPAddress = "From";
 
   constructor() { }
 
   async ngOnInit() {
-    document.documentElement.style.setProperty('--title-color', "black");
+    document.documentElement.style.setProperty('--title-color', "white");
     document.documentElement.style.setProperty('--text-color', "white");
     document.documentElement.style.setProperty('--main-color', "rgba(214, 203, 182, 1)");
 
@@ -44,16 +48,15 @@ export class AppComponent implements OnInit {
     document.documentElement.style.setProperty('--a-scale-duration', "0.6s");
     document.documentElement.style.setProperty('--a-scale-timing-function', "ease");
     
-    await this.displayIP();
+    await this.setIPs();
   }
 
-  async displayIP() {
+  async setIPs() {
     try {
-      const ipAddress = await getUserIPAddress();
-      const ipAddressElement = document.getElementById("ip-address");
-      ipAddressElement!.textContent = ipAddress;
+      this.clientIpAddress = await getClientIPAddress();
+      this.serverIPAddress = location.host;
     } catch (error) {
-      console.error('Error fetching IP address:', error);
+      console.error('Error setting IP addresses:', error);
     }
   }
 }
