@@ -215,7 +215,7 @@ a {
     }    
 }
 
-@media (max-width: 830px) {
+@media (max-width: 850px) {
     .main {
         width: 80%;
         flex-direction: column;
@@ -252,6 +252,10 @@ a {
         .tags {
             max-width: none;
         }
+    }
+
+    .right {
+        align-items: flex-start;
     }
 }
 
