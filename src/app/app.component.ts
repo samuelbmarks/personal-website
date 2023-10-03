@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import getUserIPAddress from './ts/ipAddress';
 import getClientIPAddress from './ts/ipAddress';
+import { DatePipe } from '@angular/common';
 
 @Component({
   selector: 'app-root',
@@ -12,12 +13,13 @@ export class AppComponent implements OnInit {
   private DOW_SHORT = ['SUN', 'MON', 'TUE', 'WED', 'THUR', 'FRI', 'SAT'];
   private DOW = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
   
-  public clientIpAddress = "Welcome";
-  public serverIPAddress = "From";
+  public clientIpAddress = "...";
+  public currentDate = "...";
+  public currentTime = "...";
 
   constructor() { }
 
-  async ngOnInit() {
+  ngOnInit() {
     document.documentElement.style.setProperty('--title-color', "white");
     document.documentElement.style.setProperty('--text-color', "white");
     document.documentElement.style.setProperty('--main-color', "rgba(214, 203, 182, 1)");
@@ -48,13 +50,24 @@ export class AppComponent implements OnInit {
     document.documentElement.style.setProperty('--a-scale-duration', "0.6s");
     document.documentElement.style.setProperty('--a-scale-timing-function', "ease");
     
-    await this.setIPs();
+    let date = new Date().toLocaleDateString().replaceAll("/", ".");
+    let time = new Date().toLocaleTimeString();
+    this.currentDate = date;
+    this.currentTime = time;
+
+    setInterval(() => {
+      let date = new Date().toLocaleDateString().replaceAll("/", ".");
+      let time = new Date().toLocaleTimeString();
+      this.currentDate = date;
+      this.currentTime = time;
+    }, 1000);
+
+    this.setIPs();
   }
 
   async setIPs() {
     try {
       this.clientIpAddress = await getClientIPAddress();
-      this.serverIPAddress = location.host;
     } catch (error) {
       console.error('Error setting IP addresses:', error);
     }
