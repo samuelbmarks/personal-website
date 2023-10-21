@@ -1,8 +1,4 @@
 .actions {
-    position: absolute;
-    top: 50px;
-    right: 50px;
-
     // max-width: 250px;
 
     display: flex;
@@ -13,7 +9,7 @@
     .action {
         box-shadow: var(--shadow-action);
         border-radius: 12px;
-        padding: 8px 12px;
+        padding: 12px 12px;
 
         display: flex;
         align-items: center;
@@ -30,7 +26,7 @@
         }
 
         .a-svg {
-            width: 28px;
+            height: 14px;
 
             .a-svg-bkgd {
                 fill: var(--svg-bkgd-color);
