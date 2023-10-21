@@ -2,6 +2,17 @@ html, body {
     height: 100%;
     width: 100%;
     margin: 0;
+    font-family: "Arial";
+}
+
+a {
+  text-decoration: none;
+}
+
+/** Ultra Light */
+@font-face {
+  font-family: "fof";
+  src: url("assets/fonts/fof.ttf");
 }
 
 /** Ultra Light */

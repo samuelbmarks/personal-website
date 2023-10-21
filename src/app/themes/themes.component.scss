@@ -1,0 +1,58 @@
+.actions {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+
+    max-width: 350px;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+
+    .action {
+        box-shadow: var(--shadow-action);
+        border-radius: 12px;
+        padding: 8px 12px;
+
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        .a-text {
+            color: black;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        .resume2 {
+            display: none;
+        }
+
+        .a-svg {
+            width: 28px;
+
+            .a-svg-bkgd {
+                fill: var(--svg-bkgd-color);
+            }
+
+            .a-svg-logo {
+                // fill: var(--svg-logo-color);
+                fill: black;
+            }
+        }
+
+        background-color: rgba(0, 0, 0, 0);
+        transition: background-color 0.3;
+        -webkit-transition: background-color 0.3s;
+        -o-transition: background-color 0.3s;
+        -moz-transition: background-color 0.3s;
+
+        &:hover {
+            background-color: rgba(0, 0, 0, 0.3);
+            transition: background-color 0.5;
+            -webkit-transition: background-color 0.5s;
+            -o-transition: background-color 0.5s;
+            -moz-transition: background-color 0.5s;
+        }
+    }
+}
