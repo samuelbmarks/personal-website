@@ -1,0 +1,28 @@
+.arrows {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    .arrow {
+        height: 20px;
+
+        box-shadow: var(--shadow-action);
+        border-radius: 12px;
+        padding: 12px 8px;
+        
+        background-color: rgba(0, 0, 0, 0);
+        transition: background-color 0.3;
+        -webkit-transition: background-color 0.3s;
+        -o-transition: background-color 0.3s;
+        -moz-transition: background-color 0.3s;
+
+        &:hover {
+            background-color: rgba(0, 0, 0, 0.3);
+            transition: background-color 0.5;
+            -webkit-transition: background-color 0.5s;
+            -o-transition: background-color 0.5s;
+            -moz-transition: background-color 0.5s;
+        }
+    }
+}
+

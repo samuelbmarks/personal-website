@@ -24,6 +24,8 @@ import { ActionsComponent } from './actions/actions.component';
 import { ThemesComponent } from './themes/themes.component';
 import { NavComponent } from './nav/nav.component';
 import { LogoComponent } from './logo/logo.component';
+import { HomeComponent } from './home/home.component';
+import { NavArrowsComponent } from './nav-arrows/nav-arrows.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +36,9 @@ import { LogoComponent } from './logo/logo.component';
     ActionsComponent,
     ThemesComponent,
     NavComponent,
-    LogoComponent
+    LogoComponent,
+    HomeComponent,
+    NavArrowsComponent
   ],
   imports: [
     BrowserModule,

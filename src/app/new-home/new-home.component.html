@@ -1,22 +1,28 @@
 <div class="container">
+
     <app-logo class="logo"></app-logo>
 
-    <div class="nav">
+    <div class="bar">
+        <app-themes></app-themes>
         <app-nav></app-nav>
+    </div>
+
+    <app-nav-arrows class="nav-arrows"></app-nav-arrows>
+
+    <div class="nav">
         <!-- <div class="grp-name">_NAV</div> -->
     </div>
 
     <div class="themes">
-        <app-themes></app-themes>
         <!-- <div class="grp-name">_THEMES</div> -->
     </div>
 
     <div class="actions">
-        <!-- <div class="grp-name">_LINKS</div> -->
         <app-actions></app-actions>
+        <!-- <div class="grp-name">_LINKS</div> -->
     </div>
 
-    <!-- <div class="content">
-
-    </div> -->
+    <div class="content">
+        <app-home></app-home>
+    </div>
 </div>
