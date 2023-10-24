@@ -1,0 +1,172 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    font-family: "Roboto";
+    font-weight: 100;
+}
+
+a {
+  text-decoration: none;
+}
+
+/** Ultra Light */
+@font-face {
+  font-family: "fof";
+  src: url("assets/fonts/fof.ttf");
+}
+
+/** Ultra Light */
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 100;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-ultralight-webfont.woff2");
+}
+
+/** Thin */
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 200;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-thin-webfont.woff2");
+}
+
+/** Medium */
+@font-face {
+  font-family: "San Francisco";
+  font-weight: normal;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-medium-webfont.woff2");
+}
+
+/** Semi Bold */
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 500;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-semibold-webfont.woff2");
+}
+
+/** Bold */ 
+@font-face {
+  font-family: "San Francisco";
+  font-weight: bold;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-bold-webfont.woff2");
+}
+
+/* Global animation */
+
+// logo
+
+.a-scale-0 {
+  transform: scale(0);
+  animation: a-scale var(--a-scale-duration) var(--a-scale-timing-function) 0.5s forwards;
+}
+
+// everything
+
+.a-scale-1 {
+  transform: scale(0);
+  animation: a-scale var(--a-scale-duration) var(--a-scale-timing-function) 1.1s forwards;
+}
+
+.a-scale-2 {
+  transform: scale(0);
+  animation: a-scale var(--a-scale-duration) var(--a-scale-timing-function) 1.2s forwards;
+}
+
+.a-scale-3 {
+  transform: scale(0);
+  animation: a-scale var(--a-scale-duration) var(--a-scale-timing-function) 1.3s forwards;
+}
+
+.a-scale-4 {
+  transform: scale(0);
+  animation: a-scale var(--a-scale-duration) var(--a-scale-timing-function) 1.4s forwards;
+}
+
+.a-scale-5 {
+  transform: scale(0);
+  animation: a-scale var(--a-scale-duration) var(--a-scale-timing-function) 1.5s forwards;
+}
+
+.a-scale-6 {
+  transform: scale(0);
+  animation: a-scale var(--a-scale-duration) var(--a-scale-timing-function) 1.6s forwards;
+}
+
+.a-scale-7 {
+  transform: scale(0);
+  animation: a-scale var(--a-scale-duration) var(--a-scale-timing-function) 1.7s forwards;
+}
+
+.a-scale-8 {
+  transform: scale(0);
+  animation: a-scale var(--a-scale-duration) var(--a-scale-timing-function) 1.8s forwards;
+}
+
+.a-scale-9 {
+  transform: scale(0);
+  animation: a-scale var(--a-scale-duration) var(--a-scale-timing-function) 1.9s forwards;
+}
+
+.a-scale-10 {
+  transform: scale(0);
+  animation: a-scale var(--a-scale-duration) var(--a-scale-timing-function) 2.0s forwards;
+}
+
+.a-scale-11 {
+  transform: scale(0);
+  animation: a-scale var(--a-scale-duration) var(--a-scale-timing-function) 2.1s forwards;
+}
+
+.a-scale-12 {
+  transform: scale(0);
+  animation: a-scale var(--a-scale-duration) var(--a-scale-timing-function) 2.2s forwards;
+}
+
+.a-scale-13 {
+  transform: scale(0);
+  animation: a-scale var(--a-scale-duration) var(--a-scale-timing-function) 2.3s forwards;
+}
+
+.a-scale-14 {
+  transform: scale(0);
+  animation: a-scale var(--a-scale-duration) var(--a-scale-timing-function) 2.4s forwards;
+}
+
+.a-scale-15 {
+  transform: scale(0);
+  animation: a-scale var(--a-scale-duration) var(--a-scale-timing-function) 2.5s forwards;
+}
+
+.a-scale-16 {
+  transform: scale(0);
+  animation: a-scale var(--a-scale-duration) var(--a-scale-timing-function) 2.6s forwards;
+}
+
+.a-scale-17 {
+  transform: scale(0);
+  animation: a-scale var(--a-scale-duration) var(--a-scale-timing-function) 2.7s forwards;
+}
+
+.a-scale-18 {
+  transform: scale(0);
+  animation: a-scale var(--a-scale-duration) var(--a-scale-timing-function) 2.8s forwards;
+}
+
+.a-scale-19 {
+  transform: scale(0);
+  animation: a-scale var(--a-scale-duration) var(--a-scale-timing-function) 2.9s forwards;
+}
+
+.a-scale-20 {
+  transform: scale(0);
+  animation: a-scale var(--a-scale-duration) var(--a-scale-timing-function) 3.0s forwards;
+}
+
+@keyframes a-scale {
+  0% {
+      transform: scale(0);
+  }
+  100% {
+      transform: scale(1);
+  }
+}
