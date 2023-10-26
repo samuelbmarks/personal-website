@@ -17,7 +17,7 @@ export class AppComponent implements OnInit {
     document.documentElement.style.setProperty('--text-color', "white");
     document.documentElement.style.setProperty('--main-color', "rgba(214, 203, 182, 1)");
 
-    document.documentElement.style.setProperty('--svg-logo-color', "white");
+    document.documentElement.style.setProperty('--svg-path-color', "white");
     document.documentElement.style.setProperty('--svg-bkgd-color', "rgba(39, 54, 46, 0.6)");
 
     // document.documentElement.style.setProperty('--color-group1', "rgba(39, 54, 46, 0.6)"); //27362E

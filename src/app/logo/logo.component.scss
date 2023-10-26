@@ -1,11 +1,53 @@
-.logo {
+.logo-svg {
     overflow: visible;
+    width: 100px;
+
+    .whale, .whale-parts, .blocks, .sam {
+        transition: fill 0.3s;
+        -webkit-transition: fill 0.3s;
+        -o-transition: fill 0.3s;
+        -moz-transition: fill 0.3s;
+    }
+
+    .whale {
+        fill: black;
+    }
+
+    .whale-parts {
+        fill: white;
+    }
+
+    .blocks {
+        fill: black;
+    }
+
+    .sam {
+        fill: white;
+    }
+
+    &:hover {
+        .whale, .whale-parts, .blocks, .sam {
+            transition: fill 0.5s;
+            -webkit-transition: fill 0.5s;
+            -o-transition: fill 0.5s;
+            -moz-transition: fill 0.5s;
+        }
+
+        .whale {
+            fill: white;
+        }
+    
+        .whale-parts {
+            fill: black;
+        }
+    
+        .blocks {
+            fill: white;
+        }
+    
+        .sam {
+            fill: black;
+        }
+    }
 }
 
-.whale {
-    filter: drop-shadow(0px 0px 1px rgba(0, 0, 0, 0.3));
-}
-
-.blocks {
-    filter: drop-shadow(0px 0px 1px rgba(0, 0, 0, 0.2));
-}
