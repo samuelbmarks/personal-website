@@ -2,6 +2,8 @@
     overflow: visible;
     width: 100px;
 
+    cursor: pointer;
+
     .whale, .whale-parts, .blocks, .sam {
         transition: fill 0.3s;
         -webkit-transition: fill 0.3s;
@@ -38,7 +40,7 @@
         }
     
         .whale-parts {
-            fill: black;
+            fill: rgba(0, 0, 0, 0);;
         }
     
         .blocks {
