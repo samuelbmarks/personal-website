@@ -11,19 +11,11 @@
         -moz-transition: fill 0.3s;
     }
 
-    .whale {
+    .whale, .blocks {
         fill: black;
     }
 
-    .whale-parts {
-        fill: white;
-    }
-
-    .blocks {
-        fill: black;
-    }
-
-    .sam {
+    .whale-parts, .sam {
         fill: white;
     }
 
@@ -35,19 +27,11 @@
             -moz-transition: fill 0.5s;
         }
 
-        .whale {
+        .whale, .blocks {
             fill: white;
         }
     
-        .whale-parts {
-            fill: rgba(0, 0, 0, 0);;
-        }
-    
-        .blocks {
-            fill: white;
-        }
-    
-        .sam {
+        .whale-parts, .sam {
             fill: black;
         }
     }
