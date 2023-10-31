@@ -13,7 +13,7 @@
         padding: 12px 15px;
 
         .arrow-button-svg {
-            height: 20px;
+            width: 14px;
 
             fill: black; // kzs029
 
@@ -38,9 +38,7 @@
             -o-transition: background-color 0.5s;
             -moz-transition: background-color 0.5s;
             
-            .arrow-button-svg {
-                height: 20px;
-    
+            .arrow-button-svg {    
                 fill: white; // kzs029
     
                 transition: fill 0.5s;
