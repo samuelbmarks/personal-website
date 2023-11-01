@@ -1,0 +1,39 @@
+.logo-svg {
+    overflow: visible;
+    width: 100px;
+
+    cursor: pointer;
+
+    .whale, .whale-parts, .blocks, .sam {
+        transition: fill 0.3s;
+        -webkit-transition: fill 0.3s;
+        -o-transition: fill 0.3s;
+        -moz-transition: fill 0.3s;
+    }
+
+    .whale, .blocks {
+        fill: var(--whale1);
+    }
+
+    .whale-parts, .sam {
+        fill: var(--whale2);
+    }
+
+    &:hover {
+        .whale, .whale-parts, .blocks, .sam {
+            transition: fill 0.5s;
+            -webkit-transition: fill 0.5s;
+            -o-transition: fill 0.5s;
+            -moz-transition: fill 0.5s;
+        }
+
+        .whale, .blocks {
+            fill: var(--whale1-hover);
+        }
+    
+        .whale-parts, .sam {
+            fill: var(--whale2-hover);
+        }
+    }
+}
+

@@ -1,0 +1,101 @@
+.container {
+    position: absolute;
+    width: 100%;
+    height: 100%; 
+    overflow: auto;
+
+    background-color: var(--bkgd);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    position: absolute;
+    top: 55px;
+    z-index: 2;
+}
+
+.bar {
+    position: absolute;
+    padding: 50px 50px 50px 50px;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+
+    background-color: var(--bar);
+    transition: background-color 0.3;
+    -webkit-transition: background-color 0.3s;
+    -o-transition: background-color 0.3s;
+    -moz-transition: background-color 0.3s;
+
+    &:hover {
+        background-color: var(--bar-hover);
+        transition: background-color 0.5;
+        -webkit-transition: background-color 0.5s;
+        -o-transition: background-color 0.5s;
+        -moz-transition: background-color 0.5s;
+    }
+}
+
+.nav {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 20px;
+}
+
+.nav-arrows {
+    position: absolute;
+    right: 50px;
+
+    z-index: 99;
+}
+
+.themes {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.actions {
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    z-index: 99;
+}
+
+.grp-name {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.content {
+    position: absolute;
+    
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    overflow-y: auto;
+}

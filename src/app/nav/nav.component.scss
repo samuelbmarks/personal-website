@@ -1,0 +1,102 @@
+.nav {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: 15px;
+
+    .nav-button {
+        cursor: pointer;
+
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        box-shadow: var(--button-shadow);
+        border-radius: 12px;
+        padding: 12px 12px;
+
+        .nav-button-text {
+            font-weight: 500;
+            font-size: 14px;
+
+            color: var(--button-text);
+
+            transition: color 0.3s;
+            -webkit-transition: color 0.3s;
+            -o-transition: color 0.3s;
+            -moz-transition: color 0.3s;    
+        }
+
+        .nav-button-svg {
+            height: 14px;
+
+            fill: var(--button-svg);
+
+            transition: fill 0.3s;
+            -webkit-transition: fill 0.3s;
+            -o-transition: fill 0.3s;
+            -moz-transition: fill 0.3s;    
+        }
+
+        background-color: var(--button-bkgd);
+
+        transition: background-color 0.3s;
+        -webkit-transition: background-color 0.3s;
+        -o-transition: background-color 0.3s;
+        -moz-transition: background-color 0.3s;
+
+        &:hover {
+            background-color: var(--button-bkgd-hover);
+
+            transition: background-color 0.5s;
+            -webkit-transition: background-color 0.5s;
+            -o-transition: background-color 0.5s;
+            -moz-transition: background-color 0.5s;
+            
+            .nav-button-svg {
+                fill: var(--button-svg-hover);
+
+                transition: fill 0.5s;
+                -webkit-transition: fill 0.5s;
+                -o-transition: fill 0.5s;
+                -moz-transition: fill 0.5s;
+            }
+
+            .nav-button-text {
+                color: var(--button-text-hover);
+
+                transition: color 0.5s;
+                -webkit-transition: color 0.5s;
+                -o-transition: color 0.5s;
+                -moz-transition: color 0.5s;
+            }
+        }
+
+        &.selected {
+            background-color: var(--button-bkgd-selected);
+
+            transition: background-color 0.3s;
+            -webkit-transition: background-color 0.3s;
+            -o-transition: background-color 0.3s;
+            -moz-transition: background-color 0.3s;
+            
+            .nav-button-svg {
+                fill: var(--button-svg-selected);
+
+                transition: fill 0.3s;
+                -webkit-transition: fill 0.3s;
+                -o-transition: fill 0.3s;
+                -moz-transition: fill 0.3s;
+            }
+
+            .nav-button-text {
+                color: var(--button-text-selected);
+
+                transition: color 0.3s;
+                -webkit-transition: color 0.3s;
+                -o-transition: color 0.3s;
+                -moz-transition: color 0.3s;
+            }
+        }
+    }
+}
