@@ -11,12 +11,20 @@
         -moz-transition: fill 0.3s;
     }
 
-    .whale, .blocks {
+    .whale {
         fill: var(--whale1);
     }
 
-    .whale-parts, .sam {
+    .blocks {
+        fill: var(--blocks);
+    }
+
+    .whale-parts {
         fill: var(--whale2);
+    }
+
+    .sam {
+        fill: var(--sam);
     }
 
     &:hover {
@@ -27,12 +35,20 @@
             -moz-transition: fill 0.5s;
         }
 
-        .whale, .blocks {
+        .whale {
             fill: var(--whale1-hover);
         }
+
+        .blocks {
+            fill: var(--blocks-hover);
+        }
     
-        .whale-parts, .sam {
+        .whale-parts {
             fill: var(--whale2-hover);
+        }
+
+        .sam {
+            fill: var(--sam-hover);
         }
     }
 }
