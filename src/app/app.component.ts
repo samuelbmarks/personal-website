@@ -19,7 +19,7 @@ export class AppComponent implements OnInit {
   ngOnInit() {
     this.changeTheme("light");
     
-    // animations
+    // animationss
 
     document.documentElement.style.setProperty('--a-scale-duration', "0.6s");
     document.documentElement.style.setProperty('--a-scale-timing-function', "ease");
@@ -66,7 +66,7 @@ export class AppComponent implements OnInit {
       document.documentElement.style.setProperty('--button-bkgd-hover', purple);
       document.documentElement.style.setProperty('--button-bkgd-selected', black);
 
-      // document.documentElement.style.setProperty('--button-shadow', "0px 0px 10px rgba(0, 0, 0, 0.4)");
+      document.documentElement.style.setProperty('--button-shadow', "0px 0px 10px rgba(0, 0, 0, 0.4)");
       document.documentElement.style.setProperty('--button-text', black);
       document.documentElement.style.setProperty('--button-text-hover', white);
       document.documentElement.style.setProperty('--button-text-selected', white);
@@ -76,8 +76,6 @@ export class AppComponent implements OnInit {
       document.documentElement.style.setProperty('--button-svg-selected', white);
 
       document.documentElement.style.setProperty('--content-text', black);
-
-      return;
     }
 
     else if (theme == "dark") {
@@ -115,7 +113,7 @@ export class AppComponent implements OnInit {
       document.documentElement.style.setProperty('--button-bkgd-hover', purple);
       document.documentElement.style.setProperty('--button-bkgd-selected', white);
 
-      // document.documentElement.style.setProperty('--button-shadow', "0px 0px 10px rgba(0, 0, 0, 0.4)");
+      document.documentElement.style.setProperty('--button-shadow', "0px 0px 7px rgba(0, 0, 0, 0.4)");
       document.documentElement.style.setProperty('--button-text', white);
       document.documentElement.style.setProperty('--button-text-hover', black);
       document.documentElement.style.setProperty('--button-text-selected', black);
@@ -125,8 +123,6 @@ export class AppComponent implements OnInit {
       document.documentElement.style.setProperty('--button-svg-selected', black);
 
       document.documentElement.style.setProperty('--content-text', "white");
-
-      return;
     }
 
     else if (theme == "pinto") {
@@ -165,7 +161,7 @@ export class AppComponent implements OnInit {
       document.documentElement.style.setProperty('--button-bkgd-hover', dark_pink);
       document.documentElement.style.setProperty('--button-bkgd-selected', dark_brown);
 
-      // document.documentElement.style.setProperty('--button-shadow', "0px 0px 10px rgba(0, 0, 0, 0.4)");
+      document.documentElement.style.setProperty('--button-shadow', "0px 0px 10px rgba(0, 0, 0, 0.4)");
       document.documentElement.style.setProperty('--button-text', black);
       document.documentElement.style.setProperty('--button-text-hover', white);
       document.documentElement.style.setProperty('--button-text-selected', white);
@@ -215,7 +211,7 @@ export class AppComponent implements OnInit {
       document.documentElement.style.setProperty('--button-bkgd-hover', bright_pink);
       document.documentElement.style.setProperty('--button-bkgd-selected', dark_grey);
 
-      // document.documentElement.style.setProperty('--button-shadow', "0px 0px 10px rgba(0, 0, 0, 0.4)");
+      document.documentElement.style.setProperty('--button-shadow', "0px 0px 10px rgba(0, 0, 0, 0.4)");
       document.documentElement.style.setProperty('--button-text', dark_grey);
       document.documentElement.style.setProperty('--button-text-hover', white);
       document.documentElement.style.setProperty('--button-text-selected', white);
@@ -264,7 +260,7 @@ export class AppComponent implements OnInit {
       document.documentElement.style.setProperty('--button-bkgd-hover', yellow);
       document.documentElement.style.setProperty('--button-bkgd-selected', green);
 
-      // document.documentElement.style.setProperty('--button-shadow', "0px 0px 10px rgba(0, 0, 0, 0.4)");
+      document.documentElement.style.setProperty('--button-shadow', "0px 0px 10px rgba(0, 0, 0, 0.4)");
       document.documentElement.style.setProperty('--button-text', white);
       document.documentElement.style.setProperty('--button-text-hover', dark_grey);
       document.documentElement.style.setProperty('--button-text-selected', white);
@@ -315,7 +311,7 @@ export class AppComponent implements OnInit {
       document.documentElement.style.setProperty('--button-bkgd-hover', purple);
       document.documentElement.style.setProperty('--button-bkgd-selected', dark_green);
 
-      // document.documentElement.style.setProperty('--button-shadow', "0px 0px 10px rgba(0, 0, 0, 0.4)");
+      document.documentElement.style.setProperty('--button-shadow', "0px 0px 10px rgba(0, 0, 0, 0.4)");
       document.documentElement.style.setProperty('--button-text', white);
       document.documentElement.style.setProperty('--button-text-hover', white);
       document.documentElement.style.setProperty('--button-text-selected', white);

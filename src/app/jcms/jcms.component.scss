@@ -8,10 +8,10 @@
 svg {
     width: 58px;
 
-    // filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.4));
+    -webkit-filter: drop-shadow(var(--button-shadow));
+    filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.4));
 
-    // transform: drop-shadow(0px 0px 10px #000000);
-    // overflow: visible;
+    transition: filter 0.3s;
 
     .letter {
         fill: var(--jcms-letter);
