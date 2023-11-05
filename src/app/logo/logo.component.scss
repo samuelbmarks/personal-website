@@ -1,0 +1,65 @@
+.logo {
+    -webkit-filter: drop-shadow(var(--button-shadow));
+    -o-filter: drop-shadow(var(--button-shadow));
+    -moz-filter: drop-shadow(var(--button-shadow));
+    filter: drop-shadow(var(--button-shadow));
+
+    transition: filter 0.3s;
+}
+
+.logo-svg {
+    overflow: visible;
+    width: 100px;
+
+    cursor: pointer;
+
+    .whale, .whale-parts, .blocks, .sam {
+        transition: fill 0.3s;
+        -webkit-transition: fill 0.3s;
+        -o-transition: fill 0.3s;
+        -moz-transition: fill 0.3s;
+    }
+
+    .whale {
+        fill: var(--whale1);
+        box-shadow: var(--button-shadow);
+    }
+
+    .blocks {
+        fill: var(--blocks);
+    }
+
+    .whale-parts {
+        fill: var(--whale2);
+    }
+
+    .sam {
+        fill: var(--sam);
+    }
+
+    &:hover {
+        .whale, .whale-parts, .blocks, .sam {
+            transition: fill 0.5s;
+            -webkit-transition: fill 0.5s;
+            -o-transition: fill 0.5s;
+            -moz-transition: fill 0.5s;
+        }
+
+        .whale {
+            fill: var(--whale1-hover);
+        }
+
+        .blocks {
+            fill: var(--blocks-hover);
+        }
+    
+        .whale-parts {
+            fill: var(--whale2-hover);
+        }
+
+        .sam {
+            fill: var(--sam-hover);
+        }
+    }
+}
+

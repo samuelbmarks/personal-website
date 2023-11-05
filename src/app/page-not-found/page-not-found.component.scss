@@ -1,0 +1,16 @@
+.container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.svg {
+    height: 80%;
+}
+
+.path {
+    transform-origin: center center;
+    transform: 0;
+}
