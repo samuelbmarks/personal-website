@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { NavArrowsComponent } from './nav-arrows.component';
+import { ThemeArrowsComponent } from './theme-arrows.component';
 
-describe('NavArrowsComponent', () => {
-  let component: NavArrowsComponent;
-  let fixture: ComponentFixture<NavArrowsComponent>;
+describe('ThemeArrowsComponent', () => {
+  let component: ThemeArrowsComponent;
+  let fixture: ComponentFixture<ThemeArrowsComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ NavArrowsComponent ]
+      declarations: [ ThemeArrowsComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(NavArrowsComponent);
+    fixture = TestBed.createComponent(ThemeArrowsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

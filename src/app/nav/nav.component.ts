@@ -6,25 +6,30 @@ import { OnInit } from '@angular/core';
   templateUrl: './nav.component.html',
   styleUrls: ['./nav.component.scss']
 })
-export class NavComponent {
-
+export class NavComponent implements OnInit {
+  
   constructor() {}
 
   ngOnInit() {
-    const buttons = document.querySelectorAll('.nav-button');
+    this.changeNav('nav-home');
+  }
 
-    buttons.forEach(button => {
-      button.addEventListener('click', () => {
-        // Remove 'selected' class from all buttons
-        buttons.forEach(btn => btn.classList.remove('selected'));
-  
-        // Add 'selected' class to the clicked button
-        button.classList.add('selected');
-      });
-    });
-  
-    // Initially select the 'home' button
-    const homeButton = document.querySelector('.home');
-    homeButton?.classList.add('selected');
+  public changeNav(nav: string) {
+    if (nav == "nav-home") {
+      const buttons = document.querySelectorAll('.nav-button');
+      buttons.forEach(btn => btn.classList.remove('selected-nav'));
+      const navButton = document.querySelector('.' + nav)!;
+      if (navButton) {
+        navButton.classList.add('selected-nav');
+      }
+    }
+
+    if (nav == "nav-contact") {
+      alert("Opps, this page is currently unavailable. Please check back soon.")
+    }
+
+    else if (nav == "nav-admin") {
+      alert("Oops... It looks like you don't have access to this resource.")
+    }
   }
 }

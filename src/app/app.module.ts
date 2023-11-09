@@ -24,7 +24,7 @@ import { ThemesComponent } from './themes/themes.component';
 import { NavComponent } from './nav/nav.component';
 import { LogoComponent } from './logo/logo.component';
 import { HomeComponent } from './home/home.component';
-import { NavArrowsComponent } from './nav-arrows/nav-arrows.component';
+import { ThemeArrowsComponent } from './theme-arrows/theme-arrows.component';
 import { JcmsComponent } from './jcms/jcms.component';
 
 @NgModule({
@@ -37,7 +37,7 @@ import { JcmsComponent } from './jcms/jcms.component';
     NavComponent,
     LogoComponent,
     HomeComponent,
-    NavArrowsComponent,
+    ThemeArrowsComponent,
     JcmsComponent
   ],
   imports: [
