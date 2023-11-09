@@ -29,7 +29,7 @@ export class NavComponent implements OnInit {
     }
 
     else if (nav == "nav-admin") {
-      alert("Oops... It looks like you don't have access to this resource.")
+      alert("Oops, it looks like you don't have access to this resource.")
     }
   }
 }
