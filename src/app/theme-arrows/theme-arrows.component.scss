@@ -1,5 +1,4 @@
 .arrow-buttons {
-    display: flex;
     flex-direction: column;
     gap: 10px;
 
@@ -47,5 +46,17 @@
                 -moz-transition: fill 0.5s;
             }
         }
+    }
+}
+
+@media (min-width: 901px) {
+    .arrow-buttons {
+        display: flex;
+    }
+}
+
+@media (max-width: 900px) {
+    .arrow-buttons {
+        display: none;
     }
 }

@@ -14,118 +14,125 @@ a {
 
 // logo
 
+// animation | duration | easing-function | delay | iteration-count | direction | fill-mode | play-state | name */
+
+.b-scale-ani {
+  transform: scale(0);
+  animation: a-scale var(--a-scale-duration) var(--a-scale-timing-function) forwards;
+}
+
 .a-scale-0 {
   transform: scale(0);
-  animation: a-scale var(--a-scale-duration) var(--a-scale-timing-function) 0.5s forwards;
+  animation: a-scale var(--a-scale-duration) var(--a-scale-timing-function) 0.5s 1 forwards;
 }
 
 // everything
 
 .a-scale-1 {
   transform: scale(0);
-  animation: a-scale var(--a-scale-duration) var(--a-scale-timing-function) 1.1s forwards;
+  animation: a-scale var(--a-scale-duration) var(--a-scale-timing-function) 1.1s 1 forwards;
 }
 
 .a-scale-2 {
   transform: scale(0);
-  animation: a-scale var(--a-scale-duration) var(--a-scale-timing-function) 1.2s forwards;
+  animation: a-scale var(--a-scale-duration) var(--a-scale-timing-function) 1.2s 1 forwards;
 }
 
 .a-scale-3 {
   transform: scale(0);
-  animation: a-scale var(--a-scale-duration) var(--a-scale-timing-function) 1.3s forwards;
+  animation: a-scale var(--a-scale-duration) var(--a-scale-timing-function) 1.3s 1 forwards;
 }
 
 .a-scale-4 {
   transform: scale(0);
-  animation: a-scale var(--a-scale-duration) var(--a-scale-timing-function) 1.4s forwards;
+  animation: a-scale var(--a-scale-duration) var(--a-scale-timing-function) 1.4s 1 forwards;
 }
 
 .a-scale-5 {
   transform: scale(0);
-  animation: a-scale var(--a-scale-duration) var(--a-scale-timing-function) 1.5s forwards;
+  animation: a-scale var(--a-scale-duration) var(--a-scale-timing-function) 1.5s 1 forwards;
 }
 
 .a-scale-6 {
   transform: scale(0);
-  animation: a-scale var(--a-scale-duration) var(--a-scale-timing-function) 1.6s forwards;
+  animation: a-scale var(--a-scale-duration) var(--a-scale-timing-function) 1.6s 1 forwards;
 }
 
 .a-scale-7 {
   transform: scale(0);
-  animation: a-scale var(--a-scale-duration) var(--a-scale-timing-function) 1.7s forwards;
+  animation: a-scale var(--a-scale-duration) var(--a-scale-timing-function) 1.7s 1 forwards;
 }
 
 .a-scale-8 {
   transform: scale(0);
-  animation: a-scale var(--a-scale-duration) var(--a-scale-timing-function) 1.8s forwards;
+  animation: a-scale var(--a-scale-duration) var(--a-scale-timing-function) 1.8s 1 forwards;
 }
 
 .a-scale-9 {
   transform: scale(0);
-  animation: a-scale var(--a-scale-duration) var(--a-scale-timing-function) 1.9s forwards;
+  animation: a-scale var(--a-scale-duration) var(--a-scale-timing-function) 1.9s 1 forwards;
 }
 
 .a-scale-10 {
   transform: scale(0);
-  animation: a-scale var(--a-scale-duration) var(--a-scale-timing-function) 2.0s forwards;
+  animation: a-scale var(--a-scale-duration) var(--a-scale-timing-function) 2.0s 1 forwards;
 }
 
 .a-scale-11 {
   transform: scale(0);
-  animation: a-scale var(--a-scale-duration) var(--a-scale-timing-function) 2.1s forwards;
+  animation: a-scale var(--a-scale-duration) var(--a-scale-timing-function) 2.1s 1 forwards;
 }
 
 .a-scale-12 {
   transform: scale(0);
-  animation: a-scale var(--a-scale-duration) var(--a-scale-timing-function) 2.2s forwards;
+  animation: a-scale var(--a-scale-duration) var(--a-scale-timing-function) 2.2s 1 forwards;
 }
 
 .a-scale-13 {
   transform: scale(0);
-  animation: a-scale var(--a-scale-duration) var(--a-scale-timing-function) 2.3s forwards;
+  animation: a-scale var(--a-scale-duration) var(--a-scale-timing-function) 2.3s 1 forwards;
 }
 
 .a-scale-14 {
   transform: scale(0);
-  animation: a-scale var(--a-scale-duration) var(--a-scale-timing-function) 2.4s forwards;
+  animation: a-scale var(--a-scale-duration) var(--a-scale-timing-function) 2.4s 1 forwards;
 }
 
 .a-scale-15 {
   transform: scale(0);
-  animation: a-scale var(--a-scale-duration) var(--a-scale-timing-function) 2.5s forwards;
+  animation: a-scale var(--a-scale-duration) var(--a-scale-timing-function) 2.5s 1 forwards;
 }
 
 .a-scale-16 {
   transform: scale(0);
-  animation: a-scale var(--a-scale-duration) var(--a-scale-timing-function) 2.6s forwards;
+  animation: a-scale var(--a-scale-duration) var(--a-scale-timing-function) 2.6s 1 forwards;
 }
 
 .a-scale-17 {
   transform: scale(0);
-  animation: a-scale var(--a-scale-duration) var(--a-scale-timing-function) 2.7s forwards;
+  animation: a-scale var(--a-scale-duration) var(--a-scale-timing-function) 2.7s 1 forwards;
 }
 
 .a-scale-18 {
   transform: scale(0);
-  animation: a-scale var(--a-scale-duration) var(--a-scale-timing-function) 2.8s forwards;
+  animation: a-scale var(--a-scale-duration) var(--a-scale-timing-function) 2.8s 1 forwards;
 }
 
 .a-scale-19 {
   transform: scale(0);
-  animation: a-scale var(--a-scale-duration) var(--a-scale-timing-function) 2.9s forwards;
+  animation: a-scale var(--a-scale-duration) var(--a-scale-timing-function) 2.9s 1 forwards;
 }
 
 .a-scale-20 {
   transform: scale(0);
-  animation: a-scale var(--a-scale-duration) var(--a-scale-timing-function) 3.0s forwards;
+  animation: a-scale var(--a-scale-duration) var(--a-scale-timing-function) 3.0s 1 forwards;
 }
 
 @keyframes a-scale {
   0% {
-      transform: scale(0);
+    transform: scale(0);
   }
   100% {
-      transform: scale(1);
+    transform: scale(1);
   }
 }

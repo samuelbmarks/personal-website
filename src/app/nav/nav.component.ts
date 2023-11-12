@@ -8,13 +8,35 @@ import { OnInit } from '@angular/core';
 })
 export class NavComponent implements OnInit {
   
+  private navs = [
+    "nav-home", "nav-contact", "nav-admin"
+  ];
+
+  private currentNav = "";
+
   constructor() {}
 
   ngOnInit() {
     this.changeNav('nav-home');
   }
 
-  public changeNav(nav: string) {
+  public clickNav(theme: string) {
+    this.changeNav(theme);
+  }
+
+  private changeNav(nav: string) {
+    if (window.innerWidth >= 901 || this.currentNav != nav) {
+      this.updateNav(nav);
+    }
+
+    else if (window.innerWidth <= 900 && this.currentNav == nav) {
+      const index = (this.navs.indexOf(nav) + 1) % this.navs.length;
+      const newNav = this.navs[index];
+      this.updateNav(newNav);
+    }
+  }
+
+  private updateNav(nav: string) {
     if (nav == "nav-home") {
       const buttons = document.querySelectorAll('.nav-button');
       buttons.forEach(btn => btn.classList.remove('selected-nav'));
@@ -22,6 +44,7 @@ export class NavComponent implements OnInit {
       if (navButton) {
         navButton.classList.add('selected-nav');
       }
+      this.currentNav = nav;
     }
 
     if (nav == "nav-contact") {

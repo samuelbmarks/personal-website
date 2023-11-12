@@ -19,7 +19,9 @@
 
 .bar {
     position: absolute;
-    padding: 50px 50px 50px 50px;
+    height: 200px;
+    background-color: red;
+    padding: 0 50px;
     top: 0;
     left: 0;
     right: 0;
@@ -45,6 +47,7 @@
 }
 
 .nav {
+    // background-color: red;
     position: absolute;
     top: 50px;
     right: 50px;

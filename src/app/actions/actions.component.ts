@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { AnimationService } from '../animation.service';
+import { animation } from '@angular/animations';
 
 @Component({
   selector: 'app-actions',
@@ -7,4 +9,9 @@ import { Component } from '@angular/core';
 })
 export class ActionsComponent {
 
+  constructor(private animationService: AnimationService) {}
+
+  public updateAnimations() {
+    this.animationService.updateAnimations();
+  }
 }

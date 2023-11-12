@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { AnimationService } from '../animation.service';
 
 @Component({
   selector: 'app-jcms',
@@ -7,4 +8,9 @@ import { Component } from '@angular/core';
 })
 export class JcmsComponent {
 
+  constructor(private animationService: AnimationService) {}
+  
+  public updateAnimations() {
+    this.animationService.updateAnimations();
+  }
 }

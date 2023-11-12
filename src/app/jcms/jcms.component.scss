@@ -3,6 +3,17 @@
     flex-direction: column;
     align-items: flex-end;
     gap: 15px;
+    // width: auto;
+    // background-color: green;
+}
+
+@media (max-width: 630px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 15px;
+    }
 }
 
 .svg {
@@ -57,10 +68,23 @@
 
 .second {
     display: flex;
+    flex-wrap: wrap;
     gap: 25px;
 }
 
 .word {
     display: flex;
     gap: 5px;
+}
+
+@media (max-width: 900px) {
+    .first {
+        // flex-direction: column;
+        // gap: 10px;
+    }
+    
+    .second {
+        // flex-direction: column;
+        // gap: 10px;
+    }
 }

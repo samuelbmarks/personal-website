@@ -1,16 +1,9 @@
-.nav {
-    display: flex;
-    justify-content: flex-end;
-    flex-wrap: wrap;
-    gap: 15px;
 
+
+.nav {
     .nav-button {
         cursor: pointer;
-
-        display: flex;
-        align-items: center;
-        gap: 10px;
-
+        
         box-shadow: var(--button-shadow);
         border-radius: 12px;
         padding: 12px 12px;
@@ -71,32 +64,73 @@
                 -moz-transition: color 0.5s;
             }
         }
+    }
+}
 
-        &.selected-nav {
-            background-color: var(--button-bkgd-selected);
+// desktop properties
 
-            transition: background-color 0.3s;
-            -webkit-transition: background-color 0.3s;
-            -o-transition: background-color 0.3s;
-            -moz-transition: background-color 0.3s;
-            
-            .nav-button-svg {
-                fill: var(--button-svg-selected);
+@media (min-width: 901px) {
+    .nav {
+        display: flex;
+        gap: 15px;
 
-                transition: fill 0.3s;
-                -webkit-transition: fill 0.3s;
-                -o-transition: fill 0.3s;
-                -moz-transition: fill 0.3s;
-            }
+        .nav-button {
+            display: flex;
+            align-items: center;
+            gap: 10px;
 
-            .nav-button-text {
-                color: var(--button-text-selected);
+            &.selected-nav {
+                background-color: var(--button-bkgd-selected);
+    
+                transition: background-color 0.3s;
+                -webkit-transition: background-color 0.3s;
+                -o-transition: background-color 0.3s;
+                -moz-transition: background-color 0.3s;
+                
+                .nav-button-svg {
+                    fill: var(--button-svg-selected);
+    
+                    transition: fill 0.3s;
+                    -webkit-transition: fill 0.3s;
+                    -o-transition: fill 0.3s;
+                    -moz-transition: fill 0.3s;
+                }
+    
+                .nav-button-text {
+                    color: var(--button-text-selected);
+    
+                    transition: color 0.3s;
+                    -webkit-transition: color 0.3s;
+                    -o-transition: color 0.3s;
+                    -moz-transition: color 0.3s;
+                }
+            }    
+        }
+    }
+}
 
-                transition: color 0.3s;
-                -webkit-transition: color 0.3s;
-                -o-transition: color 0.3s;
-                -moz-transition: color 0.3s;
-            }
+// mobile properties
+
+@media (max-width: 900px) {
+    .nav {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        
+        // gap: 15px;
+
+        .nav-button {
+            position: absolute;
+            right: 0;
+
+            display: none;
+            align-items: center;
+            gap: 10px;
+
+            &.selected-nav {
+                display: flex;
+            }    
         }
     }
 }
