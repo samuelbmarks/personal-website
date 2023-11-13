@@ -1,6 +1,22 @@
-.actions {
-    max-width: 400px;
+@media (min-width: 500px) {
+    .actions {
+        max-width: 400px;
 
+        .action-button {
+            
+        }
+    }
+}
+
+@media (max-width: 499px) {
+    .actions {
+        .action-button {
+
+        }
+    }
+}
+
+.actions {
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
@@ -18,6 +34,7 @@
         padding: 12px 12px;
 
         .action-button-text {
+            white-space: nowrap;
             font-weight: 500;
             font-size: 14px;
 

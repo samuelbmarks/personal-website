@@ -9,9 +9,4 @@ import { animation } from '@angular/animations';
 })
 export class ActionsComponent {
 
-  constructor(private animationService: AnimationService) {}
-
-  public updateAnimations() {
-    this.animationService.updateAnimations();
-  }
 }
